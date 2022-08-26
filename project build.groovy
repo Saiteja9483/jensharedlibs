@@ -1,4 +1,4 @@
-def call(credId,user,ip){
+def call(user,ip,credId){
   sshagent(['credId']) {
     // some block 
     sh "mv target/myweb*.war target/app.war"
