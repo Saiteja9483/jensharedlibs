@@ -1,4 +1,4 @@
-def call(user,ip.credid) {
+def call(user,ip,credid) {
 sshagent(['credid']) {
                     sh "mv target/myweb*.war target/app.war"
   sh "scp -o StrictHostKeyChecking=no target/app.war ${user}@${ip}:/opt/tomcat/webapps"
